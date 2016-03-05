@@ -1,8 +1,7 @@
-<template>
-  <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-  </div>
+<template lang="jade">
+  div#app
+    img.log(src="./assets/logo.png")
+    hello
 </template>
 
 <script>
@@ -15,8 +14,14 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
 body {
   font-family: Helvetica, sans-serif;
+}
+
+#app {
+  img {
+    float: right;
+  }
 }
 </style>
